@@ -1,0 +1,294 @@
+/*editing for index.php page  */
+.container{ 
+  height: 100vh;
+  width: 100%;
+  background-image: url(images/rp2.jpg);  
+   background-position: center; 
+   background-size: cover;
+   padding-left: 5%;
+   padding-right: 5%;
+   box-sizing: border-box;
+   position: relative;
+   
+}
+ .navbar{ 
+  width:100%;
+  height: 15vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+
+nav{
+  flex: 1;
+  padding-left: 20px;
+
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 0px 20px;
+}
+nav ul li a{
+  text-decoration: underline;
+  color: white;
+
+}
+.content h1{
+  font-size: 60px;
+  font-weight: 100;
+  margin-top:24px;
+  margin-bottom: 15px;
+  color: white;
+  
+}
+.content p{
+  font-size: 20px;
+  color: white;
+  
+}
+.content{
+  margin-left: 10%;
+  margin-top: 10%;
+}
+.content .btn{
+  display: inline-block;
+  background:linear-gradient(45deg,  #a67c6e,#614f48);
+  border-radius: 6px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color:#fff;
+  box-shadow: 3px 8px 22px rgba(94,28,68,0.15);
+}
+
+ .arrow-icons{
+  margin-top:40px;
+   display: flex; 
+  
+}
+
+.arrow-icons img{
+  margin-right:25px;
+  width:40px; 
+   background:linear-gradient(45deg, #a67c6e,#614f48); 
+   border-radius: 6px; 
+   box-sizing: border-box; 
+   box-shadow: 3px 8px 22px rgba(94,28,68,0.15); 
+
+}
+
+
+.feature{
+  height: 90%;
+  position: absolute;
+  bottom: 0;
+  right: 160px;
+}
+
+.social-links{
+  transform: rotate(-90deg);
+  position: absolute;
+  left:-90px;
+  bottom:260px;
+}
+
+.social-links a{
+  text-decoration: none;
+  color: white;
+  padding-right: 20px;
+  font-size: 14px; 
+}
+
+
+/* editing for description.php page */
+.about{
+   background-color: #ac8679;  
+  width: 100%;
+  height:100vh;
+}
+
+
+/* editing for contact.php page */
+
+.contact{
+  position:relative;
+  min-height:100vh;
+  padding:40px, 100px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction:column;
+  background:linear-gradient(45deg, #a67c6e,#614f48);
+  background-size: cover;
+}
+.contact .content{
+  max-width: 700px;
+  text-align: center;
+}
+.contact .content h2{
+  font-size: 36px;
+  font-weight:500;
+  color:#fff;
+  
+}
+.contact .content p{
+  font-weight:300;
+  color:#fff;
+  
+}
+.jasdeep{
+  width:100%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin-top:20px;
+}
+
+.jasdeep .contactInfo{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.jasdeep .contactInfo .box{
+  position: relative;
+  padding:20px 0;
+  display: flex;
+}
+.jasdeep .contactInfo .box .icon{
+  min-width: 50px;
+  height:50px;
+  background:#fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-raduis: 50%;
+  font-size: 22px;
+}
+.jasdeep .contactInfo .box .text{
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #fff;
+  flex-direction: column;
+  font-weight: 300;
+  
+}
+.jasdeep .contactInfo .box .text h3{
+  font-weight: 500;
+  color:#00bcd4;
+    
+}
+.contactForm{
+  width: 40%;
+  padding: 40px;
+  background: #fff;
+}
+.contactForm h2{
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+}
+.contactForm .inputBox{
+  position: relative;
+  width:100%;
+  margin-top:10px;
+  
+}
+.contactForm .inputBox input,
+.contactForm .inputBox input,{
+  width: 100px;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+.contanctForm .inputBox span{
+  position: absolute;
+  left:0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+  color: #e91e63;
+  font-size: 12px;
+  tranform: translateY(-20px);
+}
+
+
+
+/* .cookies-card{ 
+   transform: rotate(90deg); 
+    right:20px;   
+  width:350px; 
+  background-color:#a67c6e;
+  padding:1px;
+}
+.cookies-card * {
+  color:white;
+ 
+}
+.title{
+  font-size:1.6em;
+  letter-spacing:0.4px;
+  margin-bottom:0.5em;
+}
+.info{
+  line-height:1.4em;
+  letter-spacing:0.5px;
+  margin-bottom:4px;
+}
+.cta{
+  border:none;
+  outline:none;
+  padding:0.8em 1.5em;
+  background-color:#4a2434;
+  font-size:1.1em;
+  font-weight:bold;
+  cursor:pointer;
+   transition:background-color 0.4s;
+}
+.cta:hover{
+  background-color:#c13e65;
+  
+}
+a{
+/*   text-decoration:none; 
+  border-bottom:1px solid;
+  transition:color 0.4s;
+}
+ a.settings{ 
+  color:greenyellow;
+  border-bottom:none;
+  margin-left:1em;
+  
+ } 
+a:hover{
+  color:purple;
+/* } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
